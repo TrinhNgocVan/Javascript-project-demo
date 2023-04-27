@@ -1,8 +1,34 @@
-window.onload = function (){
-   var x = 5;
-   x = (x === 5) ? 6 : 0;
-   x = (x === 5) ? 6 : 0;
-   console.log(x);
+var component  = function (){
+   var initForm  = () => {
+      // const numbers = [45, 4, 9, 16, 25];
+      // let man  = {
+      //    fname  : "trinh",
+      //    tname : "van"
+      // }
+      const text = "xin chao"
+      for (let char of text) {
+         console.log(char)
+      }
+   }
+   var function1  = () => console.log("function1")
+   var function2  = () => console.log("function2")
+   var function3  = () => console.log("function3")
+   var function4  = () => console.log("function4")
+   return {
+      init : function(){
+         initForm();
+      }
+   }
+}();
+window.onload = function (){component.init()};
+// document.addEventListener('DOMContentLoaded', function (){component.init()});
+
+
+// window.onload = function (){
+//    var x = 5;
+//    x = (x === 5) ? 6 : 0;
+//    x = (x === 5) ? 6 : 0;
+//    console.log(x);
 
     // /* Khai bao bien */
     // var seconds = 0;
@@ -47,4 +73,4 @@ window.onload = function (){
     //
     // }
 
-}
+// }
